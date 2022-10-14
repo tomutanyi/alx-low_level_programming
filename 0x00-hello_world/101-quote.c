@@ -12,5 +12,5 @@ int main(void)
 
 	putchar(ch);
 
-	ruturn(1)
+	return (1);
 }
