@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - program that prints all possible different combinations
- * of thress digits.
+ * main - function that prints all different combinations
+ * of thress numbers.
  *
- * Return: 0
+ * return: 0
  */
 int main(void)
 {
