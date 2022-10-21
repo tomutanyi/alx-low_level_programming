@@ -7,13 +7,12 @@
 
 int main(void)
 {
-	int p = 100;
-	int i;
+	int bit;
 
-	i = 1;
-	while (i <= p)
+	while (bit++ < 100)
+
 	{
-		if (i % 3 == 0 && i % 5 == 0)
+		if ((bit % 5 == 0) && (i % 3 == 0))
 		{
 			printf("FizzBuzz");
 		}
@@ -25,19 +24,16 @@ int main(void)
 
 		else if (i % 3 == 0)
 		{
-			if (i < p)
 			printf("Fizz ");
-
-
-			else
-			{
-				printf("%i ", i);
-			}
-
-			i++;
-
-
 		}
+
+		else
+		{
+			printf("%i ", i);
+		}
+
+		i++;
+
 	}
 	printf("\n");
 	return (0);
