@@ -1,20 +1,22 @@
 #include <stdio.h>
 /**
- * main - The entry point for all programs.
+ * main - entry point
  *
- * Return: Void.
+ * Return: void
  */
 
 int main(void)
 {
-	int bit;
 
-	while (bit++ < 100)
+	int s = 100;
+	int i;
 
+	i = 1;
+	while (i <= s)
 	{
-		if ((bit % 5 == 0) && (i % 3 == 0))
+		if (i % 5 == 0 && i % 3 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 
 		else if (i % 5 == 0)
@@ -24,7 +26,11 @@ int main(void)
 
 		else if (i % 3 == 0)
 		{
+			if (i < s)
 			printf("Fizz ");
+
+			else
+			printf("Fizz");
 		}
 
 		else
@@ -33,6 +39,7 @@ int main(void)
 		}
 
 		i++;
+
 
 	}
 	printf("\n");
