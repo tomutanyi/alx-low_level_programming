@@ -16,5 +16,5 @@ void print_rev(char *s)
 	{
 		putchar(*(s + rom));
 	}
-	putchar(11);
+	putchar(10);
 }
