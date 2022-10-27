@@ -1,46 +1,31 @@
-/*
- * File: 6-cap_string.c
- * Auth: Gedeon Obae Gekonge
- */
-
-#include "main.h"
-
 #include "main.h"
 
 /**
  * cap_string - A functioon that capitalizes everything.
- * @str: what will be completely capitalized.
+ * @s: what will be completely capitalized.
  *
  * Return: ALWAYS (0).
  */
 
-char *cap_string(char *str)
+char *cap_string(char s*)
 {
-	int index = 0;
+	int count, upper;
 
-	while (str[ham])
+	rep = -32;
+
+	gap = 0;
+
+	while (s[gap] != '\0')
 	{
-		while (!(str[ham] >= 'a' && str[ham] <= 'z'))
-			ham++;
 
-		if (str[ham - 1] == ' ' ||
-		    str[ham - 1] == '\t' ||
-		    str[ham - 1] == '\n' ||
-		    str[ham - 1] == ',' ||
-		    str[ham - 1] == ';' ||
-		    str[ham - 1] == '.' ||
-		    str[ham - 1] == '!' ||
-		    str[ham - 1] == '?' ||
-		    str[ham - 1] == '"' ||
-		    str[ham - 1] == '(' ||
-		    str[ham - 1] == ')' ||
-		    str[ham - 1] == '{' ||
-		    str[ham - 1] == '}' ||
-		    ham == 0)
-			str[ham] -= 32;
+		if (s[gap] >= 'a' && s[gap] <= 'z')
+		{
+			if (s[gap] == *s || separator(s[gap - 1]))
 
-		ham++;
+				s[gap] += rep;
+		}
+
+		gap++;
 	}
-
-	return (str);
+	return (s);
 }
