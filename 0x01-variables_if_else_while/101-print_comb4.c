@@ -1,15 +1,16 @@
 #include <stdio.h>
 /**
- * main - program that prints all possible different combinations
- * of these digits.
+ * main - program that prints all possible different combinations of these digits.
  *
- * Return: 0
+ * Return: ALWAYS (0)..
  */
+
 int main(void)
 {
 	int q;
 	int a;
 	int d;
+
 
 	for (q = 48; q < 58; q++)
 	{

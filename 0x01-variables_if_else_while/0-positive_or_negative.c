@@ -4,9 +4,9 @@
 /* more headers goes there */
 
 /**
- * main - Entry point
- * Description - Prints if random generated number is +, 0 or -
- * Return: Always 0 (success)
+ * main - Entry point of the program to be run.
+ * Description - Prints if randomly geneerated number is +, 0 or -
+ * Return: Always (0) (success)
  */
 int main(void)
 {

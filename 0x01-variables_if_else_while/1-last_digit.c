@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - Entry point of the program to be run.
+ * Return: Always (0) (success)
  */
 int main(void)
 {
-	int n, dig;
+	int n, dig;i
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;

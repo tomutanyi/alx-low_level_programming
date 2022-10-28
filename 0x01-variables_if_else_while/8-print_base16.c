@@ -1,11 +1,13 @@
 #include <stdio.h>
+
 /**
- * main -Entry point
- * Return: Always 0 (Success)
+ * main - the genesis of a function
+ * Return: always a 0
  */
 int main(void)
 {
 	char t = 'a';
+
 	int lit;
 
 	for (lit = 0; lit < 16; lit++)
@@ -13,12 +15,16 @@ int main(void)
 		if (lit < 10)
 		{
 			putchar(lit + '0');
-		} else
+		}
+
+		else
 		{
 			putchar(t);
 			t++;
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
