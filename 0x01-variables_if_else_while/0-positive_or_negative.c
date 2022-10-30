@@ -4,21 +4,30 @@
 /* more headers goes there */
 
 /**
- * main - Entry point of the program to be run.
- * Description - Prints if randomly geneerated number is +, 0 or -
- * Return: Always (0) (success)
+ * main - the function
+ * Description - Prints if a random no. is pos or neg.
+ * Return: Always ((0)
  */
 int main(void)
 {
-	int n;
+	int z;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n < 0)
-		printf("%d is negative\n", n);
-	else if (n == 0)
-		printf("%d is zero\n", n);
+	
+	z = rand() - RAND_MAX / 2;
+	
+	if (z < 0)
+		printf("%d is negative\n", z);
+	
+	else if (z == 0)
+		{
+			printf("%d is zero\n", z);
+		}
+	
 	else
-		printf("%d is positive\n", n);
+		{
+			printf("%d is positive\n", z);
+		}
+	
 	return (0);
 }
