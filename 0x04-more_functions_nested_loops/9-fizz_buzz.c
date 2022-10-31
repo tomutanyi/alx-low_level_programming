@@ -1,32 +1,32 @@
 #include <stdio.h>
+
 /**
- * main - entry point
- *
- * Return: void
+ * main - main function of all c programms..
+ * Return: always display (0)
  */
 
 int main(void)
 {
 
 	int s = 100;
-	int i;
+	int u;
 
-	i = 1;
-	while (i <= s)
+	u = 1;
+	while (u <= s)
 	{
-		if (i % 5 == 0 && i % 3 == 0)
+		if (u % 5 == 0 && u % 3 == 0)
 		{
 			printf("FizzBuzz ");
 		}
 
-		else if (i % 5 == 0)
+		else if (u % 5 == 0)
 		{
 			printf("Buzz ");
 		}
 
-		else if (i % 3 == 0)
+		else if (u % 3 == 0)
 		{
-			if (i < s)
+			if (u < s)
 			printf("Fizz ");
 
 			else
@@ -35,10 +35,10 @@ int main(void)
 
 		else
 		{
-			printf("%i ", i);
+			printf("%i ", u);
 		}
 
-		i++;
+		u++;
 
 
 	}
