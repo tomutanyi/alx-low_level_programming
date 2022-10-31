@@ -1,22 +1,23 @@
 #include "main.h"
+
 /**
- * print_most_numbers - Prints all numbers except 2 and 4
- * between 1 and 9.
- * Return: Always (0).
+ * print_most_numbers - functions that prints some integers while excluding others,
+ * Return: Always return the num (0)..
  */
+
 void print_most_numbers(void)
 {
 
-	int i;
+	int v;
 
-	i = 0;
-	while (i < 10)
+	v = 0;
+	while (v < 10)
 	{
-		if (i != 2 && i != 4)
+		if (v != 2 && v != 4)
 		{
-			_putchar (i + '0');
+			_putchar (v + '0');
 		}
-	i++;
+	v++;
 	}
 
 	_putchar ('\n');
