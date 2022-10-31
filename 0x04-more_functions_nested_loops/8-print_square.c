@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * print_square - Prints out a square using the pound character (#).
- *@size: the width (and also length) of the square to be printed out.
- * Return: Always (0).
+ * print_square - # makes a square of even sides
+ *@size: length of both sides contained
+ * Return: the return is consistently (0)
  */
 
 void print_square(int size)
 {
 
-	int i;
+	int w;
 	int k;
 
 	if (size > 0)
 	{
-		for (i = 0; i < size; i++)
+		for (w = 0; w < size; w++)
 		{
 
 			for (k = 0; k < size; k++)
