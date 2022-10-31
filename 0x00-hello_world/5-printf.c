@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
-*main - Main function
+* Main - This is the Main function
 *
 *
-* Return: return 0 every time
+* Return: return (0) always.
 */
+
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");

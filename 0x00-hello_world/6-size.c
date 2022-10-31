@@ -1,17 +1,18 @@
 #include <stdio.h>
+
 /**
-* main - Main function
+* main - the main function of programs
 *
-*
-* Return: return 0 every time
+* Return: return (0) upon ending
 */
+
 int main(void)
 {
 	char charType;
-	int intType;
-	long int longintType;
-	long long int longlongintType;
 	float floatType;
+	long long int longlongintType;
+	long int longintType;
+	int intType;
 
 	printf("Size of a char: %zu byte(s)\n", sizeof(charType));
 	printf("Size of an int: %zu byte(s)\n", sizeof(intType));
