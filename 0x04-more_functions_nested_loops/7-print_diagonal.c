@@ -1,20 +1,23 @@
 #include "main.h"
+
 /**
- * print_diagonal - Prints a diagonal line ('\') then a new line
- *@n: print int (the '\' character).
- * Return: Always (0).
+ * print_diagonal - Pmakes a slanting line with your input
+ *@n: print the forward slash character
+ * Return: always returns 0..
  */
+
 void print_diagonal(int n)
 {
 
-	int i;
-	int b;
+	int p;
+
+	int r;
 
 	if (n > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (p = 0; p < n; p++)
 		{
-			for (b = 0; b < i; b++)
+			for (r = 0; r < i; r++)
 			{
 				_putchar (' ');
 			}
