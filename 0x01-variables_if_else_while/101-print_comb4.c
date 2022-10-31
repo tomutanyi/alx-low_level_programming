@@ -1,8 +1,8 @@
 #include <stdio.h>
+
 /**
- * main - program that prints all possible different combinations of these digits.
- *
- * Return: ALWAYS (0)..
+ * main - program that prints all possible comb. of integers.
+ * Return: ALWAYS 0 success .
  */
 
 int main(void)
@@ -22,9 +22,10 @@ int main(void)
 				{
 					if (d > a)
 					{
-					putchar(q);
-					putchar(a);
-					putchar(d);
+						putchar(q);
+						putchar(a);
+						putchar(d)
+
 					if (q == 55 && a == 56 && d == 57)
 					{
 						break;
