@@ -9,13 +9,13 @@
 int main(void)
 
 {
-		int number;
+		int ramen;
 
-		for (number = 0; number <= 9; number++)
+		for (ramen = 0; ramen <= 9; ramen++)
 		{
-			putchar(number + '0');
+			putchar(ramen + '0');
 
-			if (number < 9)
+			if (ramen < 9)
 			{
 				putchar(',');
 				putchar(' ');
