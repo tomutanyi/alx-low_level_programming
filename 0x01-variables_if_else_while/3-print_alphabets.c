@@ -4,6 +4,7 @@
  * main - beginning of a function..
  * Return: AlwaYs (0) .
  */
+
 int main(void)
 {
 	char y;
