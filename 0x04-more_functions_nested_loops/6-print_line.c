@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * print_line - a function that prints a straight line ('-') in the terminal.
- * followed by a new line.
- * @n: An input integer
- * Return: Always 0
+ * print_line - hyphen staright line function
+ * @n: An input integer from the user
+ * Return: Always returning (0)
  */
+
 void print_line(int n)
 {
 
-	int i;
+	int f;
 
 	if (n > 0)
 	{
-		for (i = 0; i < n; i++)
+		for (f = 0; f < n; f++)
 		{
 			_putchar (95);
 		}

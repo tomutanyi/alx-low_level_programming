@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
 *print_triangle - prints a triangle using the pound cahracter (#).
-*@size:size parameter of triangle to be printed by the program.
-*Return:returns (0)
+*@size: size parameter of a triangle to be printed out by the program.
+*Return: returns the number (0) alwys..
 */
+
 void print_triangle(int size)
 {
 	int ent2, ent4;

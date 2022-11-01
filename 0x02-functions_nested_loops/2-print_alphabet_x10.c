@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - prints the alphabet ten times.
- *
- * Return: Always 0 (Success)
+ * print_alphabet_x10 - prints the alphabet ten times then stops the for loop..
+ * Return: Always 0 a success..
  */
+
 void print_alphabet_x10(void)
 {
 	int h;

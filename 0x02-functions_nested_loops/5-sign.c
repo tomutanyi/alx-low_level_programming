@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - return 1 if positive, 0 if 0, -1 if negative
- *
- *@n: the int to print
- * Return: Always (0).
- */
+ * print_sign - return the relevant number + the relevant number
+ *@n: the int to be printed by this function
+ * Return: always a 0 ..
+*/
+
 int print_sign(int n)
 {
 	if (n < 0)

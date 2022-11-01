@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * print_to_98 - prints natural inregers: n to 98.
- *
+ * print_to_98 - prints natural inregers: n to 98 then stops..
  * @n: The input number from the user.
  *
- * Return: no return.
+ * Return: no return always (0).
  */
 
 void print_to_98(int n)

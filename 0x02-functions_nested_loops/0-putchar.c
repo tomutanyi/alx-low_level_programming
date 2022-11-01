@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* main - Prints out sentence
+* main - Prints out sentence along with hyphen -
 *
-*
-* Return: o if success
+* Return: (0) if success .
 */
 
 int main(void)

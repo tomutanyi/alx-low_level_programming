@@ -1,33 +1,33 @@
 #include "main.h"
 
 /**
- * puts_half - Prints only HALF of a string to be displayed.
- * @str: The string to be printed and returned.
- * Return: ALWAYS (0).
+ * puts_half - Prints only HALF of a string to be displayed after input from user
+ * @str: The string to be printed and returned from user
+ * Return: ALWAYS (0) when successful
  */
 
 void puts_half(char *str)
 {
-	int liv = 0, day = 0, z;
+	int livi = 0, daya = 0, zo;
 
-	while (str[liv++])
+	while (str[livi++])
 	{
-		day++;
+		daya++;
 	}
 
-	if ((day % 2) == 0)
+	if ((daya % 2) == 0)
 	{
-		z = day / 2;
+		zo = daya / 2;
 	}
 
 	else
 	{
-		z = (day + 1) / 2;
+		zo = (daya + 1) / 2;
 	}
 
-	for (liv = z; liv < day; liv++)
+	for (livi = zo; livi < daya; livi++)
 	{
-		_putchar(str[liv]);
+		_putchar(str[livi]);
 	}
 
 	_putchar('\n');

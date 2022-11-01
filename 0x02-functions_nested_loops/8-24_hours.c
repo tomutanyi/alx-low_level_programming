@@ -1,20 +1,21 @@
 #include "main.h"
+
 /**
-*jack_bauer - prints each minute from 00:00 to 23:59
-*
-*Return:Returns (0)
+*jack_bauer - function inspired by hit 2000s show 24
+*Return: returns always 0..
 */
+
 void jack_bauer(void)
 {
-	int hour, min;
+	int sali, min;
 
-	for (hour = 0; hour <= 23; hour++)
+	for (sali = 0; sali <= 23; sali++)
 
 	{
 		for (min = 0; min <= 59; min++)
 		{
-			_putchar((hour / 10) + '0');
-			_putchar((hour % 10) + '0');
+			_putchar((sali / 10) + '0');
+			_putchar((sali % 10) + '0');
 			_putchar(':');
 			_putchar((min / 10) + '0');
 			_putchar((min % 10) + '0');

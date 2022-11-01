@@ -1,28 +1,30 @@
 #include "main.h"
+
 /**
-*times_table - prints the multiplication table for 9
-*Return: returns (0)
+*times_table - the 9 times table produced by the magic of c
+*Return: returns (0) always (0) ..
 */
+
 void times_table(void)
 {
-	int num, times, product;
+	int num, rax, vaemond;
 
 	for (num = 0; num <= 9; num++)
 
 	{
 		_putchar('0');
 
-		for (times = 1; times <= 9; times++)
+		for (rax = 1; rax <= 9; rax++)
 		{
 			_putchar(',');
 			_putchar(' ');
-			product = num * times;
-			if (product <= 9)
+			vaemond = num * rax;
+			if (vaemond <= 9)
 			_putchar(' ');
 			else
-			_putchar((product / 10) + '0');
+			_putchar((vaemond / 10) + '0');
 
-			_putchar((product % 10) + '0');
+			_putchar((vaemond % 10) + '0');
 		}
 		_putchar('\n');
 	}

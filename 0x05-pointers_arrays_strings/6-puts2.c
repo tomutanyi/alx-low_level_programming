@@ -1,20 +1,22 @@
 #include "main.h"
+
 /**
- * puts2 - A function that prints all even chars of a string.
- * @str: The string whose even numbered chars are displayed.
- * Return: Always (0).
- */
+ * puts2 - A function that prints even letters in a word from usr
+ * @str: The string whose even letters are disp.
+ * Return: (0) alwys.
+
+*/
 void puts2(char *str)
 {
-	int o;
-	char k;
+	int y;
+	char d;
 
-	for (o = 0; str[o] != 0; o++)
+	for (y = 0; str[y] != 0; y++)
 	{
-		if (o % 2 == 0)
+		if (y % 2 == 0)
 		{
-			k = str[o];
-			_putchar(k);
+			d = str[y];
+			_putchar(d);
 		}
 	}
 	_putchar('\n');

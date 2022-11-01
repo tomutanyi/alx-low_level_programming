@@ -1,20 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - print the combinations of 2 digit numbers
+ * main - print the comb  of two numbers
  *
- * return: always (0) (success)
+ * return: always 0.
  */
+
 int main(void)
 {
-	int ten;
+	int tenn;
 	int one;
 
-	for (ten = 0; ten <= 9; ten++)
+	for (tenn = 0; tenn <= 9; tenn++)
 	{
-		for (one = ten + 1; one <= 9; one++)
+		for (one = tenn + 1; one <= 9; one++)
 		{
-			putchar(ten + '0');
+			putchar(tenn + '0');
 			putchar(one + '0');
 			if (ten < 8)
 			{

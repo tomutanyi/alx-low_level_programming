@@ -2,12 +2,11 @@
 #include "main.h"
 
 /**
-* print_remaining_days - takes a date and prints how many days are
-* left in the year, taking leap years into account.
-* @month: month in of the year.
-* @day: day of the month to be printed.
-* @year: year inputted.
-* Return: void
+* print_remaining_days - takes a date and prints how many days are left in the year, giving nothing back
+* @month: month in of the year to be printed out
+* @day: day of the month to be printed out by program
+* @year: year inputted by user of saif program
+* Return: always nothing, (0)
 */
 
 void print_remaining_days(int month, int day, int year)

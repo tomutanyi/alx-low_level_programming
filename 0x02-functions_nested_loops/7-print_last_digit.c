@@ -1,28 +1,26 @@
 #include "main.h"
 
 /**
- * print_last_digit - print the last digit of an integer
- *
- * @n: A number
- *
- * Return: Last digit of n
+ * print_last_digit - print the last digit of an integer wich is to be returned.
+ * @n: A number whose last didit we require
+ * Return: Last digit of n is to be returned within parentheses
  */
 
 int print_last_digit(int n)
 {
-	int last_digit;
+	int rain;
 	{
 		if (n > 0)
 		{
-			last_digit = (n % 10);
+			rain = (n % 10);
 		}
 
 		else
 		{
-			last_digit = ((n % 10) * -1);
+			rain = ((n % 10) * -1);
 		}
 	}
-	_putchar(last_digit + '0');
+	_putchar(rain + '0');
 
-	return (last_digit);
+	return (rain);
 }

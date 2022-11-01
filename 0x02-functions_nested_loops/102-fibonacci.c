@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first fifty numbers from the fibonacci sequence
- *
- * Return: (0) if successful
+ * main - Prints the first fifty numbers from the fibonacci sequence.
+ * Return: 0 if successful, always
  */
 
 int main(void)
@@ -11,22 +10,22 @@ int main(void)
 	int i, l;
 	long b1, b2, next;
 
-	b1 = 1;
-	b2 = 2;
+	v1 = 1;
+	v2 = 2;
 	l = 50;
 
 	for (i = 0; i < l; i++)
 	{
 		if (i == 49)
 		{
-			printf("%lu", b1);
+			printf("%lu", v1);
 		}
 		else
 		{
-			printf("%lu, ", b1);
-			next = b1 + b2;
-			b1 = b2;
-			b2 = next;
+			printf("%lu, ", v1);
+			next = v1 + v2;
+			v1 = v2;
+			v2 = next;
 		}
 	}
 	printf("\n");

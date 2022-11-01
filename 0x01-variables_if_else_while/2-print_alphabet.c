@@ -1,14 +1,16 @@
 #include <stdio.h>
+
 /**
  * main - the entryy point of all functions
- * Return: Always ((0)
+ * Return: Always ((0) .
  */
+
 int main(void)
 {
-	char i;
+	char b;
 
-	for (i = 'a'; i <= 'z'; i++)
-		putchar(i);
+	for (b = 'a'; b <= 'z'; b++)
+		putchar(b);
 
 	putchar('\n');
 
