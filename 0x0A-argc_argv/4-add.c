@@ -10,28 +10,23 @@
 
 int main(int argc, char *argv[])
 {
-	int w, plus = 0;
+	int k, p, add = 0;
 
-	if (argc == 1)
+	for (k = 1; k < argc; k++)
 	{
-		printf("%d\n", argc - 1);
-		return (0);
-	}
-
-	for (w = 1; w < argc; w++)
-	{
-		if ((*argv[w]) >= '0' && (*argv[w]) <= '9')
+		for (p = 0; argv[k][p] != '\0'; p++)
 		{
-			plus += atoi(argv[i]);
+			if (argv[k][p] < '0' || argv[k][p] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		add += atoi(argv[k]);
 	}
-	printf("%d\n", plus);
+
+	printf("%d\n", add);
 
 	return (0);
 }
