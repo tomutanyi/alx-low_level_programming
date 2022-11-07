@@ -4,7 +4,7 @@
  * main - prints the number of arguments passed into the program
  * @argc: the no. of arguments .
  * @argv: arguments .
- * Return: always  0 . 
+ * Return: always  0 .
  */
 
 int main(int argc, char const *argv[])
