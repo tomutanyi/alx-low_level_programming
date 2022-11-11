@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		refu++;
 	}
 
-	join = malloc(sizeof(char) * (len + 1));
+	join = malloc(sizeof(char) * (refu + 1));
 
 	if (join == NULL)
 	{
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (kat = 0; s1[kat]; kat++)
 	{
-		join[refu++] = s1[lat];
+		join[refu++] = s1[kat];
 	}
 
 	for (kat = 0; s2[kat] && kat < n; kat++)
