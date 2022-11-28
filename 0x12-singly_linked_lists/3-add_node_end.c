@@ -1,49 +1,49 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds a node to a list .
- * @head: ptr to head .
- * @str: str to be used .
- * Return: address .
- */
+ * add_node_end - Add a new node .
+ * @head: Address fist node .
+ * @str: Address of str .
+ * Return: Address of node .
+ **/
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	list_t *cursor = *head;
+	list_t *temp, *temp2;
+	unsigned int length = 0;
 
-	new_node = malloc(sizeof(list_t));
-	if (new != NULL)
-	{
-		new->str = strdup(str);
-		new->len = _strlen(str);
-		new->next = NULL;
-	}
-	else
+	if (str == NULL)
 		return (NULL);
-	if (cursor != NULL)
+
+	temp = malloc(sizeof(list_t));
+
+	if (temp == NULL)
+		return (NULL);
+
+	temp->str = strdup(str);
+
+	if (temp->str == NULL)
 	{
-		while (cursor->next != NULL)
-			cursor = cursor->next;
-		cursor->next = new;
+		free(temp);
+		return (NULL);
 	}
-	else
-		*head = new;
 
-	return (new);
-}
+	while (str[length])
+		length++;
+	temp->len = length;
 
-/**
- * _strlen - counts len .
- * @str: str in queston .
- * Return: length .
- */
+	temp->next = NULL;
 
-int _strlen(const char *str)
-{
-	int v = 0;
+	if (*head == NULL)
+	{
+		*head = temp;
+		return (temp);
+	}
 
-	while (str[v] != '\0')
-		v++;
-	return (v);
+	temp2 = *head;
+	while (temp2->next)
+		temp2 = temp2->next;
+
+	temp2->next = temp;
+	return (temp);
 }
