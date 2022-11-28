@@ -10,7 +10,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *temp, *temp2;
-	unsigned int length = 0;
+	unsigned int lat = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -28,9 +28,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	while (str[length])
-		length++;
-	temp->len = length;
+	while (str[lat])
+		lat++;
+	temp->len = lat;
 
 	temp->next = NULL;
 
