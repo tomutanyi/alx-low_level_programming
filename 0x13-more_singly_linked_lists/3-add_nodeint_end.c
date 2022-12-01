@@ -9,36 +9,29 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *nd;
-	listint_t *mouse = *head;
+	listint_t *tyr, *tyr2;
 
-	nd = malloc(sizeof(listint_t));
-
-	if (nd != NULL)
-	{
-		nd->n = n;
-		nd->next = NULL;
-	}
-
-	else
+	tyr = malloc(sizeof(listint_t));
+	if (tyr == NULL)
 	{
 		return (NULL);
 	}
 
-	if (mouse != NULL)
-	{
-		while (mouse->next != NULL)
-		{
-			mouse = mouse->next;
-		}
+	tyr->n = n;
+	tyr->next = NULL;
 
-		mouse->next = nd;
+	if (*head == NULL)
+	{
+		*head = tyr;
+		return (tyr);
 	}
 
-	else
+	tyr2 = *head;
+	while (tyr2->next)
 	{
-		*head = nd;
+		tyr2 = tyr2->next;
 	}
 
-	return (nd);
+	tyr2->next = tyr;
+	return (tyr);
 }
