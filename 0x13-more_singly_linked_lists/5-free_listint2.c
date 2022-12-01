@@ -8,18 +8,18 @@
 
 void free_listint2(listint_t **head)
 {
-	listint_t *mouse;
-	listint_t **plot = head;
+	listint_t *volt, *plot;
 
-	if (temp != NULL)
+	if (head != NULL)
 	{
-		while (*head != NULL)
+		volt = *head;
+
+		while ((plot = volt) != NULL)
 		{
-			mouse = *head;
-			free(mouse);
-			*head = (*head)->next;
+			volt = volt->next;
+			free(plot);
 		}
 
-		*plot = NULL;
+		*head = NULL;
 	}
 }
