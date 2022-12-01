@@ -27,6 +27,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	if (*head != NULL)
 	{
 		mpya->next = *head;
+	}
 
 	*head = mpya;
 	return (mpya);
