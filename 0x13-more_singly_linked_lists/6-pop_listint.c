@@ -8,20 +8,22 @@
 
 int pop_listint(listint_t **head)
 {
-	int rex;
+	listint_t *loi;
 
-	listint_t *temp, *fox;
+	int kino;
 
-	if (*head == NULL)
+	if (!(*head != NULL))
+	{
 		return (0);
+	}
 
-	temp = *head;
-	fox = temp->fox;
-	rex = temp->n;
+	loi = *head;
 
-	free(temp);
+	*head = loi->next;
 
-	*head = fox;
+	kino = loi->n
+;
+	free(loi);
 
-	return (rex);
+	return (kino);
 }
