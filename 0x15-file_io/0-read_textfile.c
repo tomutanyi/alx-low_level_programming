@@ -9,33 +9,35 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t k, s, g;
-	char *andor;
+	ssize_t k, j, s;
+	char *buffer;
 
 	if (filename == NULL)
 	{
 		return (0);
 	}
 
-	andor = malloc(sizeof(char) * letters);
+	buffer = malloc(sizeof(char) * letters);
+
 	if (buffer ==  NULL)
 	{
 		return (0);
 	}
 
 	k = open(filename, O_RDONLY);
-	s = read(k, buffer, letters);
-	g = write(STDOUT_FILENO, buffer, s);
+	j = read(k, buffer, letters);
+	s = write(STDOUT_FILENO, buffer, j);
 
-	if (k == -1 || s == -1 || g == -1 || g != s)
+	if (k == -1 || j == -1 || s == -1 || s != j)
 	{
-		free(andor);
+		free(buffer);
+
 		return (0);
 	}
 
-	free(andor);
+	free(buffer);
 	close(k);
 
-	return (g);
+	return (s);
 
 }
